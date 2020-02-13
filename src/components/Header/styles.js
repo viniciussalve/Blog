@@ -8,14 +8,15 @@ export const Hello = styled.div`
   margin: 10% 0 6% 0;
 
   h2 {
-    font-family: "Circular Medium";
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
     color: white;
     opacity: 0.87;
     letter-spacing: -1.5px;
     font-size: 2.4em;
     font-weight: 400;
     line-height: 1.3em;
-    max-width: 500px;
+    max-width: 550px;
 
     strong {
       color: #d88aff;
@@ -29,8 +30,9 @@ export const Hello = styled.div`
   }
 
   h1 {
-    font-family: "Circular Bold";
-    letter-spacing: -0.05em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    letter-spacing: -0.01em;
     color: white;
     opacity: 0.87;
     font-size: 7em;

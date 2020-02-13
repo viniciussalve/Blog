@@ -1,15 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Asap:400,500i,700&display=swap');
-
-@font-face {
-  font-family: 'Circular Bold';
-  src: url('../fonts/CircularStd-Bold.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Circular Medium';
-  src: url('../fonts/CircularStd-Book.ttf') format('truetype');
-}
+@import url('https://fonts.googleapis.com/css?family=Raleway:600,800&display=swap');
 
 html {
   font-family: sans-serif;
