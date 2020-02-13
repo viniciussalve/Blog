@@ -4,7 +4,7 @@ import SEO from "../components/seo"
 import Layout from "../components/layout"
 import { graphql } from "gatsby"
 import { BlogPost, BlogTitle, BlogContent } from "./styles"
-import { FaCalendarAlt } from "react-icons/fa"
+import { FaCalendarAlt, FaUserAlt } from "react-icons/fa"
 
 export const query = graphql`
   query($slug: String!) {
@@ -27,7 +27,7 @@ const Blog = ({ data }) => {
         <BlogTitle>
           <h1>{data.markdownRemark.frontmatter.title}</h1>
           <h4>
-            <strong>Autor</strong> <span>Vinícius Alves</span>
+            <FaUserAlt color={"white"}/> <strong>Autor</strong> <span>Vinícius Alves</span>
           </h4>
           <p>
             <FaCalendarAlt />
