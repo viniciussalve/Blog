@@ -16,7 +16,8 @@ const Repositories = () => {
               privacy: PUBLIC
               affiliations: OWNER
               isFork: false
-              first: 4
+              first: 4,
+              orderBy: {field: CREATED_AT, direction: DESC}
             ) {
               nodes {
                 name
