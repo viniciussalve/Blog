@@ -1,6 +1,5 @@
 import React from "react"
 import SEO from "../components/seo"
-import dompurify from "dompurify"
 
 import Layout from "../components/layout"
 import { graphql } from "gatsby"
@@ -20,7 +19,6 @@ export const query = graphql`
 `
 
 const Blog = ({ data }) => {
-  const sanitizer = dompurify.sanitize
 
   return (
     <Layout>
@@ -42,7 +40,7 @@ const Blog = ({ data }) => {
         <BlogContent>
           <div
             dangerouslySetInnerHTML={{
-              __html: sanitizer(data.markdownRemark.html),
+              __html: data.markdownRemark.html,
             }}
           ></div>
         </BlogContent>
