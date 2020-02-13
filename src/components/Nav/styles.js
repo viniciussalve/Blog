@@ -3,7 +3,6 @@ import { Navbar, NavItem } from "reactstrap"
 import { Link } from "gatsby"
 
 export const CNavabar = styled(Navbar)`
-  margin-top: 6%;
   background: rgba(255, 255, 255, 0.13);
   padding: 40px 0;
 
