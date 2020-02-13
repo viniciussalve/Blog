@@ -15,7 +15,7 @@ const Design = () => (
           </h2>
           <p>
             Você pode dar uma olhada nos meus projetos de design clicando{" "}
-            <a href="/">aqui!</a> tenho experiência com{" "}
+            <a href="https://www.behance.net/viniciusalvess" target="_blank" rel="noopener noreferrer">aqui!</a> tenho experiência com{" "}
             <strong>
               Photoshop, Illustrator, Adobe XD, Premiere e After Effects,
             </strong>{" "}

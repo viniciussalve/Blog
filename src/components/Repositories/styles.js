@@ -6,6 +6,12 @@ export const Repository = styled.div`
   border-radius: 15px;
   color: white;
   height: 100%;
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: scale(1.03, 1.03);
+  }
 
   h3 {
     margin-bottom: 4px;
@@ -63,5 +69,14 @@ export const Git = styled.div`
     font-weight: bold;
     text-decoration: none;
     color: #d88aff;
+  }
+`
+export const RepoLink = styled.a`
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none;
+    outline: 0;
+    border: none;
   }
 `

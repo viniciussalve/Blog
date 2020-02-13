@@ -1,6 +1,6 @@
 ---
 title: Como foi criar meu Blog com Gatsby.
-date: "12/02/2020"
+date: "13/02/2020"
 ---
 
 Olá! hoje vou contar um pouco de como foi criar meu primeiro **blog** utilizando **gatsby**.

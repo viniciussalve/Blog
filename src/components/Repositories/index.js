@@ -1,7 +1,7 @@
 import React from "react"
 
 import { useStaticQuery, graphql } from "gatsby"
-import { Repository, Tags, Language, Date, Git } from "./styles"
+import { Repository, Tags, Language, Date, Git, RepoLink } from "./styles"
 import { Row, Col } from "reactstrap"
 
 const Repositories = () => {
@@ -16,8 +16,8 @@ const Repositories = () => {
               privacy: PUBLIC
               affiliations: OWNER
               isFork: false
-              first: 4,
-              orderBy: {field: CREATED_AT, direction: DESC}
+              first: 4
+              orderBy: { field: CREATED_AT, direction: DESC }
             ) {
               nodes {
                 name
@@ -52,7 +52,14 @@ const Repositories = () => {
 
             <p>
               Aqui estão meus últimos projetos! Você pode dar uma olhada em
-              todos eles clicando <a href={github.viewer.url}>aqui!</a>
+              todos eles clicando{" "}
+              <a
+                href={github.viewer.url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                aqui!
+              </a>
             </p>
           </Git>
         </Col>
@@ -61,21 +68,27 @@ const Repositories = () => {
       <Row>
         {github.viewer.repositories.nodes.map(reposi => (
           <Col xl="6" md="12" className="mt-5">
-            <Repository>
-              <h3>{reposi.name}</h3>
-              <span>
-                <Date>Created at: </Date>
-                {reposi.createdAt}
-              </span>
-              <Tags>
-                {reposi.languages.nodes.map(language => (
-                  <span>
-                    <Language>{language.name}</Language>
-                  </span>
-                ))}
-              </Tags>
-              <p>{reposi.description}</p>
-            </Repository>
+            <RepoLink
+              href={reposi.url}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Repository>
+                <h3>{reposi.name}</h3>
+                <span>
+                  <Date>Created at: </Date>
+                  {reposi.createdAt}
+                </span>
+                <Tags>
+                  {reposi.languages.nodes.map(language => (
+                    <span>
+                      <Language>{language.name}</Language>
+                    </span>
+                  ))}
+                </Tags>
+                <p>{reposi.description}</p>
+              </Repository>
+            </RepoLink>
           </Col>
         ))}
       </Row>
