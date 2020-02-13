@@ -15,14 +15,27 @@ const Design = () => (
           </h2>
           <p>
             Você pode dar uma olhada nos meus projetos de design clicando{" "}
-            <a href="https://www.behance.net/viniciusalvess" target="_blank" rel="noopener noreferrer">aqui!</a> tenho experiência com{" "}
+            <a
+              href="https://www.behance.net/viniciusalvess"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              aqui!
+            </a>{" "}
+            tenho experiência com{" "}
             <strong>
               Photoshop, Illustrator, Adobe XD, Premiere e After Effects,
             </strong>{" "}
             tenho noções de UI e UX e gosto muito de construir layouts!
           </p>
         </Text>
-        <Thumbnail />
+        <a
+          href="https://www.behance.net/viniciusalvess"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Thumbnail />
+        </a>
       </DesignContent>
     </Col>
   </Row>

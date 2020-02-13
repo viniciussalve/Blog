@@ -35,6 +35,10 @@ export const Hello = styled.div`
     opacity: 0.87;
     font-size: 7em;
     margin: -15px 0 0 0;
+
+    @media (max-width: 668px) {
+      font-size: 4em;  
+    }
   }
 
   p {

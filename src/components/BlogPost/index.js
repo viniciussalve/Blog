@@ -1,7 +1,6 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import { Blog, Post, SLink } from "./styles"
-import { Tags } from "../Repositories/styles"
 import { FaCalendarAlt } from "react-icons/fa"
 
 const BlogPost = () => {

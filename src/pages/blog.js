@@ -7,7 +7,7 @@ import BlogPost from "../components/BlogPost"
 const BlogPage = () => {
   return (
     <Layout>
-      <SEO title="BlogPosts" />
+      <SEO title="Blog" />
       <BlogPost />
     </Layout>
   )

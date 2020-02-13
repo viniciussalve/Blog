@@ -24,19 +24,19 @@ const Blog = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="BlogPost" />
+      <SEO title="Post" />
       <BlogPost>
         <BlogTitle>
           <h1>{data.markdownRemark.frontmatter.title}</h1>
+          <h4>
+            <strong>Autor</strong> <span>Vinícius Alves</span>
+          </h4>
           <p>
             <FaCalendarAlt />
             <span>
               <strong>Publicado em</strong>{" "}
               {data.markdownRemark.frontmatter.date}
             </span>
-          </p>
-          <p>
-            <strong>Autor</strong> Vinícius Alves
           </p>
         </BlogTitle>
         <BlogContent>

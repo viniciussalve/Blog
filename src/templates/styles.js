@@ -18,6 +18,15 @@ export const BlogTitle = styled.div`
     font-size: 2.4em;
   }
 
+  h4 {
+    margin-bottom: 5px;
+    color: #d88aff;
+
+    span {
+      color: white;
+    }
+  }
+
   p {
     display: flex;
     align-items: center;
@@ -35,7 +44,7 @@ export const BlogTitle = styled.div`
 export const BlogContent = styled.div`
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
-  padding: 35px 50px;
+  padding: 50px 70px;
   font-size: 1.2em;
   opacity: 0.9;
 `
