@@ -21,8 +21,8 @@ export const Result = styled.p`
 `
 
 export const CustomTerminal = styled.div`
-  background: #121212;
-  border-top: 40px solid #121212;
+  background: rgb(55, 55, 55);
+  border-top: 40px solid rgb(45, 45, 45);
   border-radius: 15px;
   width: 100%;
   padding: 50px 60px;
