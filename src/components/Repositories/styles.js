@@ -63,7 +63,7 @@ export const Git = styled.div`
   }
 
   p {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     margin: 15px 0 0 0;
   }
 
