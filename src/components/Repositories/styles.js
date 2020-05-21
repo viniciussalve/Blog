@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const Repository = styled.div`
   background: rgba(255, 255, 255, 0.11);
-  padding: 50px 50px 15px 50px;
+  padding: 40px 50px;
   border-radius: 15px;
   color: white;
   height: 100%;
@@ -15,15 +15,17 @@ export const Repository = styled.div`
 
   h3 {
     margin-bottom: 4px;
+    font-size: 23px;
   }
 
   p {
     font-weight: 500;
-    font-size: 1.15rem;
+    font-size: 18px;
   }
 
   span {
     opacity: 0.85;
+    font-size: 16px;
   }
 `
 
@@ -51,13 +53,13 @@ export const Language = styled.strong`
 export const Git = styled.div`
   color: white;
   background: rgba(255, 255, 255, 0.11);
-  padding: 65px;
+  padding: 60px;
   border-radius: 15px;
   margin-top: 9%;
 
   h2 {
     margin: 0;
-    font-size: 1.9em;
+    font-size: 1.5em;
   }
 
   p {
