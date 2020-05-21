@@ -3,16 +3,16 @@ import Img from "../../images/design.png"
 
 export const Text = styled.div`
   color: white;
-  padding: 70px 50px;
+  padding: 50px;
 
   h2 {
     margin: 0;
-    font-size: 1.9em;
+    font-size: 1.5em;
   }
 
   p {
-    font-size: 1.3rem;
-    margin: 15px 0 0 0;
+    font-size: 1.1rem;
+    margin: 25px 0 0 0;
     line-height: 33px;
   }
 
