@@ -24,7 +24,7 @@ export const CNavItem = styled(NavItem)`
 `
 
 export const CLink = styled(Link)`
-  font-size: 1.4em;
+  font-size: 1.2em;
   color: #9c9c9c;
   font-weight: bold;
   margin-left: 30px;
@@ -41,7 +41,7 @@ export const Contact = styled.div`
   h3 {
     letter-spacing: -0.04rem;
     margin-bottom: 10px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     align-self: flex-start;
     color: white;
   }
